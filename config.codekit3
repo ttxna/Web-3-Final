@@ -1349,11 +1349,63 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/product\/crevice.png" : {
+      "ft" : 32768,
+      "iS" : 11308,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/crevice.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/hairpro.png" : {
+      "ft" : 32768,
+      "iS" : 20279,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/hairpro.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/odor.png" : {
+      "ft" : 32768,
+      "iS" : 22656,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/odor.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/product\/OR.png" : {
       "ft" : 32768,
       "iS" : 429,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/product\/OR.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/vacuum-include.png" : {
+      "ft" : 32768,
+      "iS" : 80975,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/vacuum-include.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1373,6 +1425,19 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/vacuum2.png" : {
+      "ft" : 32768,
+      "iS" : 72640,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/vacuum2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/deploy\/index.html" : {
@@ -1400,6 +1465,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
+    "\/dev\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/checkout.html",
       "oF" : 0
     },
     "\/dev\/checkout.kit" : {
@@ -1681,6 +1754,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/thankyou.html",
+      "oF" : 0
     },
     "\/dev\/thankyou.kit" : {
       "cB" : 0,
