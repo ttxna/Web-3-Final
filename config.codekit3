@@ -1622,11 +1622,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/thank you\/hair-products.png" : {
+    "\/deploy\/img\/thankyou\/hair-products.png" : {
       "ft" : 32768,
       "iS" : 144459,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/thank you\/hair-products.png",
+      "oAP" : "\/deploy\/img\/thankyou\/hair-products.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1635,11 +1635,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/thank you\/tracking.png" : {
+    "\/deploy\/img\/thankyou\/tracking.png" : {
       "ft" : 32768,
       "iS" : 93901,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/thank you\/tracking.png",
+      "oAP" : "\/deploy\/img\/thankyou\/tracking.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1648,11 +1648,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/thank you\/vacuums.png" : {
+    "\/deploy\/img\/thankyou\/vacuums.png" : {
       "ft" : 32768,
       "iS" : 169272,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/thank you\/vacuums.png",
+      "oAP" : "\/deploy\/img\/thankyou\/vacuums.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1688,89 +1688,68 @@
       "oAP" : "\/deploy\/thankyou.html",
       "oF" : 0
     },
-    "\/deploy\/visa.png" : {
-      "ft" : 32768,
-      "iS" : 4427,
-      "oA" : 0,
-      "oAP" : "\/deploy\/visa.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/dev\/checkout.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/checkout.html",
-      "oF" : 0
-    },
     "\/dev\/checkout.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/checkout.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
     },
-    "\/dev\/content\/checkout-hero.kit" : {
+    "\/dev\/content\/checkout\/checkout-hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/checkout-hero.html",
+      "oAP" : "\/dev\/content\/checkout\/checkout-hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/checkout-pay.kit" : {
+    "\/dev\/content\/checkout\/checkout-pay.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/checkout-pay.html",
+      "oAP" : "\/dev\/content\/checkout\/checkout-pay.html",
       "oF" : 0
     },
-    "\/dev\/content\/product-bottom.kit" : {
+    "\/dev\/content\/index\/product-bottom.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/index\/product-bottom.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/index\/product-gallery.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/index\/product-gallery.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/index\/product-hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/index\/product-hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/thankyou\/thankyou-hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/product-bottom.html",
+      "oAP" : "\/dev\/content\/thankyou\/thankyou-hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/product-gallery.kit" : {
+    "\/dev\/content\/thankyou\/thankyou-shop.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/product-gallery.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/product-hero.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/product-hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/thankyou-hero.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/thankyou-hero.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/thankyou-shop.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/thankyou-shop.html",
+      "oAP" : "\/dev\/content\/thankyou\/thankyou-shop.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -1989,21 +1968,13 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/thankyou.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/thankyou.html",
-      "oF" : 0
-    },
     "\/dev\/thankyou.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/thankyou.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 2
     }
   },
   "hooks" : [
