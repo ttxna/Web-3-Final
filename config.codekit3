@@ -1453,6 +1453,45 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/product\/shop1.png" : {
+      "ft" : 32768,
+      "iS" : 42558,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/shop1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/shop2.png" : {
+      "ft" : 32768,
+      "iS" : 52013,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/shop2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/shop3.png" : {
+      "ft" : 32768,
+      "iS" : 29362,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/shop3.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/product\/vacuum-demo.png" : {
       "ft" : 32768,
       "iS" : 310975,
