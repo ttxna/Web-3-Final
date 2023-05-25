@@ -1622,6 +1622,45 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/thank you\/hair-products.png" : {
+      "ft" : 32768,
+      "iS" : 144459,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/thank you\/hair-products.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/thank you\/tracking.png" : {
+      "ft" : 32768,
+      "iS" : 93901,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/thank you\/tracking.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/thank you\/vacuums.png" : {
+      "ft" : 32768,
+      "iS" : 169272,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/thank you\/vacuums.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
