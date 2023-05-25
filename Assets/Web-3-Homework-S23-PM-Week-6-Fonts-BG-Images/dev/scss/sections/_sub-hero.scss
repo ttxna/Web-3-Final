@@ -1,0 +1,80 @@
+/* =============
+    Sub-Hero
+============= */
+
+#sub-hero{
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". sub-hero-cards .";
+
+        @include xxl{
+            grid-template-columns: auto 1200px auto;
+        }
+    }
+    >div{
+        display: grid;
+        gap: 16px;
+        
+        @include md{
+            grid-area: sub-hero-cards;
+            grid-template-columns: 50% auto;
+        }
+
+        .sub-hero-card{
+            background-color: var(--blue);
+            padding: 16px;
+            color: white;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+
+            h1{
+                font-size: rem-calc(22);
+                font-weight: 400;
+
+                @include md{
+                    font-size: rem-calc(30);
+                }
+            }
+
+            a{
+                margin-top: 8px;
+            }
+
+            aside{
+                margin-left: auto;
+                width: 35%;
+
+                @include sm{
+                    width: 25%;
+                }
+
+                @include xl{
+                    width: 20%;
+                }
+
+                >div{
+                    background-position: center;
+                    background-size: cover;
+                    width: 100%;
+                    padding-bottom: 100%;
+                    border-radius: 100%;
+                    border: 3px solid white;
+                    overflow: hidden;
+                }
+
+                #sub-left-img{
+                    background-image: url("../img/subHero/planning.jpg");
+                }
+                
+
+
+                #sub-right-img{
+                    background-image: url("../img/subHero/tickets.jpg");
+                }
+            }
+        }
+    }
+    
+}
