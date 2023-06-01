@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light-grey: #D9D9D9;
+  --navy:#2B45A4;
+  --orange: #D8873D;
+  --purple:#4E3BC3;
+  --blue: #2560B7;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -327,9 +332,26 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
@@ -354,9 +376,138 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  text-align: right;
+  padding-top: 16px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+nav ul li {
+  margin-bottom: 24px;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-bottom: 0;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--black);
+  padding: 24px 0;
+  font-size: 1.875rem;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 0px 0px 0px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: var(--yellow);
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 24px 16px #logo-nav;
+  background-color: var(--blue);
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-areas: "logo burger" "nav nav";
+}
+@media (min-width: 1024px) {
+  header {
+    grid-template-areas: "logo nav";
+  }
+}
+header #logo {
+  grid-area: logo;
+}
+header #burger {
+  grid-area: burger;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  header #burger {
+    display: none;
+  }
+}
+header #burger button {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+header #burger button i {
+  font-size: 1.5625rem;
+}
+header nav {
+  grid-area: nav;
+  padding: 16px;
+}
+
 /* =============
     Footer
 ============= */
+section {
+  padding: 32px 16px 0px 16px;
+  padding-right: 16px;
+}
+section #thankyou h1 {
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  color: navy;
+}
+section #thankyou h3 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: var(--purple);
+  font-weight: 400;
+}
+section #info {
+  padding-top: 40px;
+  border-radius: 100%;
+}
+section #info h2 {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: orange;
+  font-weight: 600;
+}
+section #info p {
+  padding-top: 8px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+section #info h1 {
+  padding-top: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+section #tracking h1 {
+  font-size: 20px;
+}

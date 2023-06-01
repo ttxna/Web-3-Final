@@ -1,0 +1,55 @@
+section{
+    padding: 32px 16px 0px 16px;
+    padding-right: 16px;
+    
+    #thankyou{
+        
+       h1{
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+        color: navy;
+       }
+       h3{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        color: var(--purple);
+        font-weight: 400;
+       }
+       
+    }
+
+   #info{
+    padding-top: 40px;
+    border-radius: 100%;
+    h2{
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        color: orange;
+        font-weight: 600;
+    }
+    p{
+        padding-top: 8px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        font-weight: 400; 
+    }
+    h1{
+        padding-top: 10px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        font-weight: 600; 
+    }
+    
+   }
+
+   #tracking
+   padding-top: 40px;
+   h1{
+    font-size: 20px;
+   }
+}

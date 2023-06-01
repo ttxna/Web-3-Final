@@ -19,3 +19,10 @@
 @import "layout/_footer";
 
 // Sections Styles
+@import "sections/product/product-hero";
+@import "sections/product/product-gallery";
+@import "sections/product/product-bottom";
+@import "sections/checkout/checkout-hero";
+@import "sections/checkout/checkout-pay";
+@import "sections/thankyou/thankyou-hero";
+@import "sections/thankyou/thankyou-shop";
