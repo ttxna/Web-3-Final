@@ -1,0 +1,18 @@
+section{
+    img{
+        width: 100%;
+        border: 3px solid var(--orange);
+    }
+    #checkout{
+        h1{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        
+        aside{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+}

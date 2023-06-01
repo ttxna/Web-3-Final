@@ -11,6 +11,10 @@ section{
     #vacuums{
         img{
             width: 100%;
+            border: none;
+            @include lg{
+              width: 40%;
+            }
         }
         a{
         font-size: 20px;
@@ -19,30 +23,37 @@ section{
         display: flex;
         justify-content: center;
         width: 50%;
-        margin: 12px;
+        margin-top: -20px;
         margin-left: 25%;
         color: var(--white);
-        text-decoration: none;
+       
+        
       }
        } 
 
        #hair-products{
         padding-top: 36px;
+        a{
+          font-size: 20px;
+          background-color: var(--purple);
+          padding: 16px 8px;
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          margin-top: -20px;
+          margin-left: 25%;
+          color: var(--white);
+          text-decoration: none;
+          
+        }
         img{
           width: 100%;
+          border: none;
+          @include lg{
+            width: 40%;
+          }
       }
-      a{
-      font-size: 20px;
-      background-color: var(--purple);
-      padding: 16px 8px;
-      display: flex;
-      justify-content: center;
-      width: 50%;
-      margin-top: 6px;
-      margin-left: 25%;
-      color: var(--white);
-      text-decoration: none;
-      border-color: aqua;
-    }
+      
        }
+
 }

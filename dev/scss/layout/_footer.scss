@@ -5,9 +5,7 @@ footer{
     padding: 0 16px 24px;
     text-align: center;
     margin-top: 60px;
-a{
-    padding-top: 6px;
-}
+    
     #socials{
         h1{
             font-size: 64px;
@@ -18,6 +16,9 @@ a{
         justify-content: center;
         margin-top: 16px;
         li{
+            a{
+                padding-top: 6px;
+            }
         margin: 0 10px;
             }
         }

@@ -353,6 +353,18 @@ ul li {
   }
 }
 
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 20px 0;
+}
+
+.border {
+  border: 2px solid var(--blue);
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
+}
+
 /* =============
     Typography
 ============= */
@@ -389,9 +401,20 @@ textarea {
 /* =============
     Navigation
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.show-menu {
+  display: block !important;
+}
+
 nav {
   text-align: right;
-  padding-top: 16px;
   display: none;
 }
 @media (min-width: 1024px) {
@@ -405,6 +428,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100%;
   }
 }
 nav ul li {
@@ -429,25 +453,31 @@ nav ul li a:link, nav ul li a:visited {
   }
 }
 nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 /* =============
     Header
 ============= */
 header {
-  padding: 24px 16px #logo-nav;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+header #logo-nav {
   background-color: var(--blue);
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-areas: "logo burger" "nav nav";
 }
 @media (min-width: 1024px) {
-  header {
+  header #logo-nav {
     grid-template-areas: "logo nav";
   }
 }
-header #logo {
+header #logo-nav #logo {
   grid-area: logo;
 }
 header #burger {
@@ -475,6 +505,9 @@ header nav {
   grid-area: nav;
   padding: 16px;
 }
+header nav ul li {
+  text-decoration: none;
+}
 
 /* =============
     Footer
@@ -483,9 +516,6 @@ footer {
   padding: 0 16px 24px;
   text-align: center;
   margin-top: 60px;
-}
-footer a {
-  padding-top: 6px;
 }
 footer #socials h1 {
   font-size: 64px;
@@ -498,21 +528,36 @@ footer #socials ul {
 footer #socials ul li {
   margin: 0 10px;
 }
+footer #socials ul li a {
+  padding-top: 6px;
+}
+
+section img {
+  width: 100%;
+  border: 3px solid var(--orange);
+}
+section #checkout h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+section #checkout aside {
+  display: flex;
+  justify-content: center;
+}
 
 section {
   padding: 32px 16px 0px 16px;
-  padding-right: 16px;
+}
+section #thankyou {
+  margin-top: 100px;
+  text-align: center;
 }
 section #thankyou h1 {
   font-size: 64px;
-  display: flex;
-  justify-content: center;
   color: navy;
 }
 section #thankyou h3 {
   font-size: 20px;
-  display: flex;
-  justify-content: center;
   color: var(--purple);
   font-weight: 400;
 }
@@ -521,48 +566,60 @@ section #thankyou h3 {
     display: grid;
   }
 }
-section #info {
-  padding-top: 40px;
-  border-radius: 100%;
+section #thankyou #info {
+  padding-top: 20px;
+  margin: 20px 50px;
+  border: 3px solid black;
+  text-align: center;
 }
-section #info h2 {
+section #thankyou #info h2 {
   font-size: 24px;
-  display: flex;
-  justify-content: center;
   color: orange;
   font-weight: 600;
+  padding-bottom: 12px;
 }
-section #info p {
+section #thankyou #info p {
   padding-top: 8px;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
   font-weight: 400;
+  padding-bottom: 12px;
 }
-section #info h1 {
+section #thankyou #info h1 {
   padding-top: 10px;
   font-size: 15px;
-  display: flex;
-  justify-content: center;
   font-weight: 600;
+  padding-bottom: 25px;
 }
 section #tracking img {
   width: 100%;
+  border: 3px solid var(--orange);
 }
-section #tracking h1 {
-  padding-top: 40px;
+@media (min-width: 1024px) {
+  section #tracking img {
+    width: 40%;
+  }
+}
+section #tracking div {
+  border: 3px solid var(--blue);
+  padding: 20px 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section #tracking div h1 {
   padding-bottom: 16px;
   font-size: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-weight: 600;
 }
-section #order-details h2 {
-  padding-top: 40px;
+section #tracking #order-details {
+  padding: 20px 16px;
+}
+section #tracking #order-details h2 {
   font-size: 20px;
   padding-bottom: 6px;
 }
-section #order-details p {
+section #tracking #order-details p {
   padding-top: 6px;
 }
 
@@ -575,6 +632,12 @@ section h1 {
 }
 section #vacuums img {
   width: 100%;
+  border: none;
+}
+@media (min-width: 1024px) {
+  section #vacuums img {
+    width: 40%;
+  }
 }
 section #vacuums a {
   font-size: 20px;
@@ -583,16 +646,12 @@ section #vacuums a {
   display: flex;
   justify-content: center;
   width: 50%;
-  margin: 12px;
+  margin-top: -20px;
   margin-left: 25%;
   color: var(--white);
-  text-decoration: none;
 }
 section #hair-products {
   padding-top: 36px;
-}
-section #hair-products img {
-  width: 100%;
 }
 section #hair-products a {
   font-size: 20px;
@@ -601,9 +660,17 @@ section #hair-products a {
   display: flex;
   justify-content: center;
   width: 50%;
-  margin-top: 6px;
+  margin-top: -20px;
   margin-left: 25%;
   color: var(--white);
   text-decoration: none;
-  border-color: aqua;
+}
+section #hair-products img {
+  width: 100%;
+  border: none;
+}
+@media (min-width: 1024px) {
+  section #hair-products img {
+    width: 40%;
+  }
 }

@@ -1867,6 +1867,18 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/Assets\/Web-3-Homework\/dev\/scss\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/Assets\/Web-3-Homework\/dev\/scss\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/Assets\/Web-3-Homework\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -2177,7 +2189,7 @@
     },
     "\/deploy\/img\/thankyou\/hair-products.png" : {
       "ft" : 32768,
-      "iS" : 144459,
+      "iS" : 75571,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/thankyou\/hair-products.png",
       "oF" : 0,

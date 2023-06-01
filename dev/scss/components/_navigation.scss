@@ -1,10 +1,20 @@
 /* =============
     Navigation
 ============= */
+html{
+    scroll-behavior: smooth;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+.show-menu{
+    display: block !important;
+}
 nav{
     text-align: right;
-    padding-top: 16px;
+    
     display: none;
+    
 
     @include lg{
         display: block;
@@ -15,10 +25,10 @@ nav{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        height: 100%;
     }
     li{
         margin-bottom: 24px;
-
         @include lg{
             margin-bottom: 0;
         }
@@ -35,7 +45,7 @@ nav{
             }
 
             &:hover, &:active{
-                color: var(--yellow);
+                color: var(--blue);
             }
     }
    }

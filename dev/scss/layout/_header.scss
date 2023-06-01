@@ -2,8 +2,14 @@
     Header
 ============= */
 header{
-    padding: 24px 16px
-    #logo-nav;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    
+    #logo-nav{
+       
         background-color: var(--blue);
 
         display: grid;
@@ -19,7 +25,7 @@ header{
         #logo{
             grid-area: logo;
         }
-       
+    }
 
 
 
@@ -50,6 +56,11 @@ header{
         nav{
             grid-area: nav;
             padding: 16px;
+            ul{
+                li{
+                    text-decoration: none;
+                }
+            }
             
         }
       
