@@ -16,6 +16,11 @@ section{
         justify-content: center;
         color: var(--purple);
         font-weight: 400;
+
+        @include lg{
+            display: grid;
+           
+        }
        }
        
     }
@@ -47,9 +52,33 @@ section{
     
    }
 
-   #tracking
-   padding-top: 40px;
-   h1{
-    font-size: 20px;
+   #tracking{
+    img{
+         width: 100%;
+        }
+    
+        h1{
+            padding-top: 40px;
+            padding-bottom: 16px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+           }
    }
+ 
+  
+   
+
+   #order-details{
+    h2{
+        padding-top: 40px;
+        font-size: 20px;
+        padding-bottom: 6px;
+       }
+       p{
+        padding-top: 6px;
+       }
+   }
+   
 }

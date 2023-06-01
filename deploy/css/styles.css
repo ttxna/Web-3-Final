@@ -340,6 +340,19 @@ ul li {
   list-style: none;
 }
 
+.large-images {
+  width: 100%;
+}
+
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -466,6 +479,26 @@ header nav {
 /* =============
     Footer
 ============= */
+footer {
+  padding: 0 16px 24px;
+  text-align: center;
+  margin-top: 60px;
+}
+footer a {
+  padding-top: 6px;
+}
+footer #socials h1 {
+  font-size: 64px;
+}
+footer #socials ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+footer #socials ul li {
+  margin: 0 10px;
+}
+
 section {
   padding: 32px 16px 0px 16px;
   padding-right: 16px;
@@ -482,6 +515,11 @@ section #thankyou h3 {
   justify-content: center;
   color: var(--purple);
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  section #thankyou h3 {
+    display: grid;
+  }
 }
 section #info {
   padding-top: 40px;
@@ -508,6 +546,64 @@ section #info h1 {
   justify-content: center;
   font-weight: 600;
 }
+section #tracking img {
+  width: 100%;
+}
 section #tracking h1 {
+  padding-top: 40px;
+  padding-bottom: 16px;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+section #order-details h2 {
+  padding-top: 40px;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+section #order-details p {
+  padding-top: 6px;
+}
+
+section h1 {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+section #vacuums img {
+  width: 100%;
+}
+section #vacuums a {
+  font-size: 20px;
+  background-color: var(--purple);
+  padding: 16px 8px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 12px;
+  margin-left: 25%;
+  color: var(--white);
+  text-decoration: none;
+}
+section #hair-products {
+  padding-top: 36px;
+}
+section #hair-products img {
+  width: 100%;
+}
+section #hair-products a {
+  font-size: 20px;
+  background-color: var(--purple);
+  padding: 16px 8px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 6px;
+  margin-left: 25%;
+  color: var(--white);
+  text-decoration: none;
+  border-color: aqua;
 }
