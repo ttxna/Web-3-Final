@@ -538,6 +538,45 @@ footer #footer-bottom aside ul li {
   padding-top: 12px;
 }
 
+#top {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+#top h1 {
+  display: grid;
+  justify-content: left;
+  font-size: 36px;
+}
+#top h2 {
+  font-size: 20px;
+}
+#top h3 {
+  font-size: 16px;
+  padding-top: 4px;
+  padding-bottom: 15px;
+}
+
+#package h2 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+#package h6 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 6px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+#package button {
+  font-size: 20px;
+}
+
+#details h1 {
+  font-size: 15px;
+}
+
 #checkout {
   margin: 20px 16px -10px;
   padding: 150px 16px 0px 16px;
@@ -739,61 +778,60 @@ section #tracking #order-details p {
   }
 }
 
-section h1 {
+#bottom h1 {
   font-size: 24px;
   display: flex;
   justify-content: center;
   font-weight: 600;
   padding-bottom: 20px;
 }
-@media (min-width: 1024px) {
-  section aside ul li {
-    display: grid;
-    grid-template-columns: 50% auto;
-  }
-}
-section #vacuums {
+#bottom #vacuums {
   background-image: url("../img/thankyou/vacuums.png");
   background-size: cover;
-  background-position: 30% bottom;
-  height: 50vh;
+  background-position: 20% center;
+  height: 25vh;
+  margin-bottom: 100px;
 }
-section #vacuums img {
+#bottom #vacuums img {
   width: 100%;
   border: none;
 }
-section #vacuums a {
+#bottom #vacuums button {
   font-size: 20px;
   background-color: var(--purple);
   padding: 16px 8px;
   display: flex;
   justify-content: center;
   width: 50%;
-  margin-top: -20px;
+  margin-top: 150px;
   margin-left: 25%;
   color: var(--white);
 }
-section #hair-products {
+#bottom #hair-products {
+  background-image: url("../img/thankyou/hair-products.png");
+  background-size: cover;
+  background-position: 20% center;
+  height: 25vh;
   padding-top: 36px;
 }
-section #hair-products a {
+#bottom #hair-products button {
   font-size: 20px;
   background-color: var(--purple);
   padding: 16px 8px;
   display: flex;
   justify-content: center;
   width: 50%;
-  margin-top: -20px;
+  margin-top: 150px;
   margin-left: 25%;
   color: var(--white);
   text-decoration: none;
 }
-section #hair-products img {
+#bottom #hair-products img {
   width: 100%;
   border: none;
 }
 @media (min-width: 1024px) {
-  section #hair-products img {
+  #bottom #hair-products img {
     width: 40%;
   }
 }

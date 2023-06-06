@@ -1,4 +1,4 @@
-section{
+#bottom{
     h1{
         font-size: 24px;
         display: flex;
@@ -6,52 +6,60 @@ section{
         font-weight: 600;
         padding-bottom: 20px;
         }
-@include lg{
-  aside{
-  ul{
-    li{
-      display: grid;
-              grid-template-columns: 50% auto;
-    }
-  }
-}
-}
-   
+// @include lg{
+//   aside{
+//   ul{
+//     li{
+//       display: grid;
+//               grid-template-columns: 50% auto;
+//     }
+//   }
+// }
+
+  
     #vacuums{
+      
       background-image: url("../img/thankyou/vacuums.png");
       background-size: cover;
-      background-position: 30% bottom;
-      height: 50vh;
+      background-position: 20% center;
+      height: 25vh;
+      margin-bottom: 100px;
+     
         img{
             width: 100%;
             border: none;
-            
         }
-        a{
+        
+        button{
         font-size: 20px;
         background-color: var(--purple);
         padding: 16px 8px;
         display: flex;
         justify-content: center;
         width: 50%;
-        margin-top: -20px;
+        margin-top: 150px;
         margin-left: 25%;
         color: var(--white);
-       
+        }
         
       }
-       } 
+       
 
        #hair-products{
+
+      background-image: url("../img/thankyou/hair-products.png");
+      background-size: cover;
+      background-position: 20% center;
+      height: 25vh;
         padding-top: 36px;
-        a{
+        button{
           font-size: 20px;
           background-color: var(--purple);
           padding: 16px 8px;
           display: flex;
           justify-content: center;
           width: 50%;
-          margin-top: -20px;
+          margin-top: 150px;
           margin-left: 25%;
           color: var(--white);
           text-decoration: none;
@@ -62,9 +70,12 @@ section{
           border: none;
           @include lg{
             width: 40%;
-          }
-      }
+           }
+           }
       
        }
+       
+      }
 
-}
+
+

@@ -1,0 +1,41 @@
+#top{
+padding-top: 100px;
+padding-bottom: 20px;
+h1{
+    display: grid;
+    justify-content: left;
+    font-size: 36px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 15px;
+}
+}
+#package{
+h2{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+h6{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    text-decoration: underline;
+    font-weight: 400;
+}
+button{
+    font-size: 20px;
+}
+}
+
+#details{
+    h1{
+        font-size: 15px;
+    }
+}
