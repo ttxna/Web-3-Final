@@ -1,103 +1,115 @@
-section{
-    padding: 32px 16px 0px 16px;
+#thankyou-page {
+    // padding: 32px 16px 0px 16px;
+margin-top: 100px;
+        @include lg {
+            display: grid;
+            grid-template-columns: 50% auto;
+        
+    }
 
-      
-    #thankyou{
+
+    #thankyou {
         margin-top: 100px;
         text-align: center;
-       h1{
-        font-size: 64px;
-        color: navy;
-       }
-       h3{
-        font-size: 20px;
-        color: var(--purple);
-        font-weight: 400;
 
-        @include lg{
-            display: grid;
-           
+        h1 {
+            font-size: 64px;
+            color: navy;
         }
-       }
-       
 
-   #info{
-    padding-top: 20px;
-    margin: 20px 50px;
-    border: 3px solid black;
-    text-align: center;
-    h2{
-        font-size: 24px;
-        color: orange;
-        font-weight: 600;
-        padding-bottom: 12px;
-    }
-    p{
-        padding-top: 8px;
-        font-size: 20px;
-        font-weight: 400; 
-        padding-bottom: 12px;
-    }
-    h1{
-        padding-top: 10px;
-        font-size: 15px;
-        font-weight: 600; 
-        padding-bottom: 25px;
-    }
-    
-   }
-}
+        h3 {
+            font-size: 20px;
+            color: var(--purple);
+            font-weight: 400;
 
-   #tracking{
-    img{
-         width: 100%;
-         border: 3px solid var(--orange);
-         @include lg{
-            width: 40%;
-          }
+
         }
-        div{
+
+
+        #info {
+            padding-top: 20px;
+            margin: 20px 50px;
+            border: 3px solid black;
+            text-align: center;
+
+            h2 {
+                font-size: 24px;
+                color: orange;
+                font-weight: 600;
+                padding-bottom: 12px;
+            }
+
+            p {
+                padding-top: 8px;
+                font-size: 20px;
+                font-weight: 400;
+                padding-bottom: 12px;
+            }
+
+            h1 {
+                padding-top: 10px;
+                font-size: 15px;
+                font-weight: 600;
+                padding-bottom: 25px;
+            }
+
+        }
+    }
+
+    #tracking {
+        img {
+            width: 100%;
+            border: 3px solid var(--orange);
+
+            @include lg {
+                width: 40%;
+            }
+        }
+
+        div {
             border: 3px solid var(--blue);
             padding: 20px 16px;
             margin-top: 30px;
             margin-bottom: 30px;
-            h1{
-              
+
+            h1 {
+
                 padding-bottom: 16px;
                 font-size: 20px;
                 display: flex;
                 justify-content: left;
                 font-weight: 600;
-               }
+            }
         }
-           
-            
-   
-    #order-details{
-        padding: 20px 16px;
-    h2{
-        
-        font-size: 20px;
-        padding-bottom: 6px;
-       }
-       p{
-        padding-top: 6px;
-       }
-   }
-   }
 
-   @include lg{
-    #thankyou{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-rows: repeat(2, 20vh);
-    #info{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-rows: repeat(2, 20vh);
-    }          
-}
-   }
-}
-  
 
+
+        #order-details {
+            padding: 20px 16px;
+
+            h2 {
+
+                font-size: 20px;
+                padding-bottom: 6px;
+            }
+
+            p {
+                padding-top: 6px;
+            }
+        }
+    }
+
+    // @include lg {
+    //     #thankyou {
+    //         display: grid;
+    //         grid-template-columns: 50% auto;
+    //         grid-template-rows: repeat(2, 20vh);
+
+    //         #info {
+    //             display: grid;
+    //             grid-template-columns: 50% auto;
+    //             grid-template-rows: repeat(2, 20vh);
+    //         }
+    //     }
+    // }
+}

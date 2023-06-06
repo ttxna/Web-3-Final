@@ -441,7 +441,6 @@ nav ul li {
 }
 nav ul li a:link, nav ul li a:visited {
   color: var(--black);
-  padding: 24px 0;
   font-size: 1.875rem;
   transition: 0.25s;
 }
@@ -464,9 +463,12 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  background-color: var(--light-grey);
+  z-index: 500;
+  padding: 24px 16px;
+  box-sizing: border-box;
 }
 header #logo-nav {
-  background-color: var(--light-grey);
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-areas: "logo burger" "nav nav";
@@ -481,11 +483,11 @@ header #logo-nav #logo {
 }
 header #burger {
   grid-area: burger;
-  padding: 16px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 @media (min-width: 1024px) {
   header #burger {
@@ -502,7 +504,6 @@ header #burger button i {
 }
 header nav {
   grid-area: nav;
-  padding: 16px;
 }
 header nav ul li {
   text-decoration: none;
@@ -688,96 +689,94 @@ footer #footer-bottom aside ul li {
   justify-self: end;
 }
 
-section {
-  padding: 32px 16px 0px 16px;
+#thankyou-page {
+  margin-top: 100px;
 }
-section #thankyou {
+@media (min-width: 1024px) {
+  #thankyou-page {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#thankyou-page #thankyou {
   margin-top: 100px;
   text-align: center;
 }
-section #thankyou h1 {
+#thankyou-page #thankyou h1 {
   font-size: 64px;
   color: navy;
 }
-section #thankyou h3 {
+#thankyou-page #thankyou h3 {
   font-size: 20px;
   color: var(--purple);
   font-weight: 400;
 }
-@media (min-width: 1024px) {
-  section #thankyou h3 {
-    display: grid;
-  }
-}
-section #thankyou #info {
+#thankyou-page #thankyou #info {
   padding-top: 20px;
   margin: 20px 50px;
   border: 3px solid black;
   text-align: center;
 }
-section #thankyou #info h2 {
+#thankyou-page #thankyou #info h2 {
   font-size: 24px;
   color: orange;
   font-weight: 600;
   padding-bottom: 12px;
 }
-section #thankyou #info p {
+#thankyou-page #thankyou #info p {
   padding-top: 8px;
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 12px;
 }
-section #thankyou #info h1 {
+#thankyou-page #thankyou #info h1 {
   padding-top: 10px;
   font-size: 15px;
   font-weight: 600;
   padding-bottom: 25px;
 }
-section #tracking img {
+#thankyou-page #tracking img {
   width: 100%;
   border: 3px solid var(--orange);
 }
 @media (min-width: 1024px) {
-  section #tracking img {
+  #thankyou-page #tracking img {
     width: 40%;
   }
 }
-section #tracking div {
+#thankyou-page #tracking div {
   border: 3px solid var(--blue);
   padding: 20px 16px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-section #tracking div h1 {
+#thankyou-page #tracking div h1 {
   padding-bottom: 16px;
   font-size: 20px;
   display: flex;
   justify-content: left;
   font-weight: 600;
 }
-section #tracking #order-details {
+#thankyou-page #tracking #order-details {
   padding: 20px 16px;
 }
-section #tracking #order-details h2 {
+#thankyou-page #tracking #order-details h2 {
   font-size: 20px;
   padding-bottom: 6px;
 }
-section #tracking #order-details p {
+#thankyou-page #tracking #order-details p {
   padding-top: 6px;
 }
+
 @media (min-width: 1024px) {
-  section #thankyou {
+  #bottom {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-rows: repeat(2, 20vh);
   }
-  section #thankyou #info {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: repeat(2, 20vh);
+  #bottom h1 {
+    padding-bottom: 100px;
   }
 }
-
 #bottom h1 {
   font-size: 24px;
   display: flex;
@@ -785,53 +784,25 @@ section #tracking #order-details p {
   font-weight: 600;
   padding-bottom: 20px;
 }
-#bottom #vacuums {
-  background-image: url("../img/thankyou/vacuums.png");
+#bottom .thank-img-card {
   background-size: cover;
   background-position: 20% center;
   height: 25vh;
   margin-bottom: 100px;
-}
-#bottom #vacuums img {
-  width: 100%;
-  border: none;
-}
-#bottom #vacuums button {
-  font-size: 20px;
-  background-color: var(--purple);
-  padding: 16px 8px;
   display: flex;
   justify-content: center;
-  width: 50%;
-  margin-top: 150px;
-  margin-left: 25%;
+  align-items: flex-end;
+}
+#bottom .thank-img-card button {
+  font-size: 20px;
+  background-color: var(--purple);
+  padding: 16px 100px;
+  margin-bottom: -30px;
   color: var(--white);
+}
+#bottom #vacuums {
+  background-image: url("../img/thankyou/vacuums.png");
 }
 #bottom #hair-products {
   background-image: url("../img/thankyou/hair-products.png");
-  background-size: cover;
-  background-position: 20% center;
-  height: 25vh;
-  padding-top: 36px;
-}
-#bottom #hair-products button {
-  font-size: 20px;
-  background-color: var(--purple);
-  padding: 16px 8px;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin-top: 150px;
-  margin-left: 25%;
-  color: var(--white);
-  text-decoration: none;
-}
-#bottom #hair-products img {
-  width: 100%;
-  border: none;
-}
-@media (min-width: 1024px) {
-  #bottom #hair-products img {
-    width: 40%;
-  }
 }

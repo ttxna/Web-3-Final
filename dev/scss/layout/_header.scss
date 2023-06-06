@@ -6,11 +6,14 @@ header{
     width: 100%;
     top: 0;
     left: 0;
-   
+    background-color: var(--light-grey);
+    z-index: 500;
+    padding: 24px 16px;
+    box-sizing: border-box;
     
     #logo-nav{
        
-        background-color: var(--light-grey);
+        
 
         display: grid;
         grid-template-columns: 20% auto;
@@ -31,11 +34,12 @@ header{
 
         #burger{
             grid-area: burger;
-            padding: 16px;
+            // padding: 16px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             width: 100%;
+            height: 100%;
 
             @include lg{
                 display: none;
@@ -55,7 +59,7 @@ header{
         
         nav{
             grid-area: nav;
-            padding: 16px;
+            // padding: 16px;
             ul{
                 li{
                     text-decoration: none;
