@@ -638,6 +638,13 @@ footer #footer-bottom aside ul li {
 #shipping #cost div a {
   padding: 10px 20px;
 }
+#shipping #questions h1 {
+  color: aqua;
+}
+#shipping #questions a {
+  display: flex;
+  justify-self: end;
+}
 
 section {
   padding: 32px 16px 0px 16px;
