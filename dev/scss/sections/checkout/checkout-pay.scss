@@ -6,16 +6,93 @@
     }
     ul{
         display: flex;
-        justify-content: center;
+        justify-content: left;
         li{
             button{
                 font-size: rem-calc(15);
                 font-size: 10%;
                 padding: 4px 40px;
-                
-
             }
             margin: 0 10px;
             }
     }
+    #card-number{
+    form{
+        padding-top: 10px;
+            display: flex;
+            input{
+                width: 100%;
+        }
+    }
 }
+    #card-info{
+        form{
+            padding-top: 8px;
+            input{
+                width: 27.4%;
+            }
+        }
+    }
+    }
+
+#shipping{
+    h1{
+        display: flex;
+        justify-content: left;
+        font-size: 20px;
+    }
+    #name{
+        form{
+            padding-top: 8px;
+            display: flex;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    #address{
+        form{
+            padding-top: 10px;
+                display: flex;
+                input{
+                    width: 100%;
+            }
+        }
+}
+#address-info{
+    form{
+        padding-top: 8px;
+        input{
+            width: 27.4%;
+        }
+    }
+}
+
+#delivery{
+   img{
+        display: flex;
+        justify-content: left;
+                }
+            }
+
+#cost{
+    border: 1px solid black;
+    div{
+        border: 1px solid black;
+        a{
+            padding: 10px 20px;
+        }
+    }
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ".cost.";
+
+    grid-area: cost;
+            display: grid;
+            grid-template-columns: 50% auto;
+
+}
+        }
+
+
+

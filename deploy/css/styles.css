@@ -570,7 +570,7 @@ footer #footer-bottom aside ul li {
 }
 #payment ul {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 #payment ul li {
   margin: 0 10px;
@@ -579,6 +579,64 @@ footer #footer-bottom aside ul li {
   font-size: 0.9375rem;
   font-size: 10%;
   padding: 4px 40px;
+}
+#payment #card-number form {
+  padding-top: 10px;
+  display: flex;
+}
+#payment #card-number form input {
+  width: 100%;
+}
+#payment #card-info form {
+  padding-top: 8px;
+}
+#payment #card-info form input {
+  width: 27.4%;
+}
+
+#shipping h1 {
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+}
+#shipping #name form {
+  padding-top: 8px;
+  display: flex;
+}
+#shipping #name form input {
+  width: 100%;
+}
+#shipping #address form {
+  padding-top: 10px;
+  display: flex;
+}
+#shipping #address form input {
+  width: 100%;
+}
+#shipping #address-info form {
+  padding-top: 8px;
+}
+#shipping #address-info form input {
+  width: 27.4%;
+}
+#shipping #delivery img {
+  display: flex;
+  justify-content: left;
+}
+#shipping #cost {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ".cost.";
+  grid-area: cost;
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+#shipping #cost div {
+  border: 1px solid black;
+}
+#shipping #cost div a {
+  padding: 10px 20px;
 }
 
 section {
