@@ -6,15 +6,26 @@ section{
         font-weight: 600;
         padding-bottom: 20px;
         }
-
+@include lg{
+  aside{
+  ul{
+    li{
+      display: grid;
+              grid-template-columns: 50% auto;
+    }
+  }
+}
+}
    
     #vacuums{
+      background-image: url("../img/thankyou/vacuums.png");
+      background-size: cover;
+      background-position: 30% bottom;
+      height: 50vh;
         img{
             width: 100%;
             border: none;
-            @include lg{
-              width: 40%;
-            }
+            
         }
         a{
         font-size: 20px;

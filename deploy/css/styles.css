@@ -464,10 +464,9 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 500;
 }
 header #logo-nav {
-  background-color: var(--blue);
+  background-color: var(--light-grey);
   display: grid;
   grid-template-columns: 20% auto;
   grid-template-areas: "logo burger" "nav nav";
@@ -529,20 +528,57 @@ footer #socials ul li {
   margin: 0 10px;
 }
 footer #socials ul li a {
-  padding-top: 6px;
+  font-size: 1.875rem;
+  padding-top: 12px;
+}
+footer #footer-bottom aside h1 {
+  padding-top: 12px;
+}
+footer #footer-bottom aside ul li {
+  padding-top: 12px;
 }
 
-section img {
+#checkout {
+  margin: 20px 16px -10px;
+  padding: 150px 16px 0px 16px;
+}
+#checkout img {
   width: 100%;
-  border: 3px solid var(--orange);
+  padding: 20px 0px;
 }
-section #checkout h1 {
+#checkout h1 {
   font-size: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
-section #checkout aside {
+#checkout aside {
+  border: 8px solid var(--navy);
+  padding: 25px;
+}
+#checkout aside div {
+  margin-top: 9px;
+  margin-bottom: 3px;
+}
+#checkout aside h2 {
   display: flex;
   justify-content: center;
+}
+
+#payment h1 {
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+}
+#payment ul {
+  display: flex;
+  justify-content: center;
+}
+#payment ul li {
+  margin: 0 10px;
+}
+#payment ul li button {
+  font-size: 0.9375rem;
+  font-size: 10%;
+  padding: 4px 40px;
 }
 
 section {
@@ -622,6 +658,18 @@ section #tracking #order-details h2 {
 section #tracking #order-details p {
   padding-top: 6px;
 }
+@media (min-width: 1024px) {
+  section #thankyou {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(2, 20vh);
+  }
+  section #thankyou #info {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(2, 20vh);
+  }
+}
 
 section h1 {
   font-size: 24px;
@@ -630,14 +678,21 @@ section h1 {
   font-weight: 600;
   padding-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  section aside ul li {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+section #vacuums {
+  background-image: url("../img/thankyou/vacuums.png");
+  background-size: cover;
+  background-position: 30% bottom;
+  height: 50vh;
+}
 section #vacuums img {
   width: 100%;
   border: none;
-}
-@media (min-width: 1024px) {
-  section #vacuums img {
-    width: 40%;
-  }
 }
 section #vacuums a {
   font-size: 20px;
