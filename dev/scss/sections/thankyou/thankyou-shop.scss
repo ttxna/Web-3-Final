@@ -2,29 +2,18 @@
   @include lg {
     display: grid;
     grid-template-columns: 50% auto;
-    h1{
-      padding-bottom: 100px;
-    }
+   
 
 }
 
   h1 {
-    font-size: 24px;
+    font-size: 100px;
     display: flex;
     justify-content: center;
     font-weight: 600;
-    padding-bottom: 20px;
+    padding-left: 16px;
   }
 
-  // @include lg{
-  //   aside{
-  //   ul{
-  //     li{
-  //       display: grid;
-  //               grid-template-columns: 50% auto;
-  //     }
-  //   }
-  // }
 
   .thank-img-card {
     background-size: cover;
