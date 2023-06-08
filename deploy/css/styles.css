@@ -539,30 +539,50 @@ footer #footer-bottom aside ul li {
   padding-top: 12px;
 }
 
-#top {
+#product-hero {
+  padding: 0 16px;
+}
+#product-hero #top {
   padding-top: 100px;
   padding-bottom: 20px;
 }
-#top h1 {
+#product-hero #top h1 {
   display: grid;
   justify-content: left;
   font-size: 36px;
 }
-#top h2 {
+@media (min-width: 1024px) {
+  #product-hero #top h1 {
+    font-size: 48px;
+  }
+}
+#product-hero #top h2 {
   font-size: 20px;
+  padding-bottom: 10px;
 }
-#top h3 {
-  font-size: 16px;
-  padding-top: 4px;
-  padding-bottom: 15px;
+@media (min-width: 1024px) {
+  #product-hero #top h2 {
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
 }
-
-#package h2 {
+@media (min-width: 1024px) {
+  #product-hero #package {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+  #product-hero #package #hero-vacuum img {
+    margin: 0px -100px;
+  }
+}
+#product-hero h2 {
   font-size: 32px;
   display: flex;
   justify-content: center;
 }
-#package h6 {
+#product-hero h6 {
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -570,8 +590,12 @@ footer #footer-bottom aside ul li {
   text-decoration: underline;
   font-weight: 400;
 }
-#package button {
+#product-hero button {
   font-size: 20px;
+}
+#product-hero div h4 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #details h1 {
@@ -579,118 +603,159 @@ footer #footer-bottom aside ul li {
 }
 
 #checkout {
-  margin: 20px 16px -10px;
-  padding: 150px 16px 0px 16px;
-}
-#checkout img {
-  width: 100%;
-  padding: 20px 0px;
+  margin: 120px 16px 20px;
 }
 #checkout h1 {
-  font-size: 40px;
-  padding-bottom: 10px;
-}
-#checkout aside {
-  border: 8px solid var(--navy);
-  padding: 25px;
-}
-#checkout aside div {
-  margin-top: 9px;
-  margin-bottom: 3px;
-}
-#checkout aside h2 {
   display: flex;
   justify-content: center;
 }
+#checkout div {
+  border: 0.5px solid black;
+}
+#checkout #product {
+  border: 8px solid var(--navy);
+  padding: 25px;
+}
+#checkout #product img {
+  width: 100%;
+  padding: 40px 0px 60px;
+}
+@media (min-width: 1024px) {
+  #checkout #product img {
+    margin-bottom: -40px;
+  }
+}
+#checkout #product h1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+#checkout #product div {
+  margin-top: 9px;
+  margin-bottom: 6px;
+}
+@media (min-width: 1024px) {
+  #checkout #product div {
+    margin-bottom: 15px;
+  }
+}
+#checkout #product h2 {
+  display: flex;
+  justify-content: center;
+}
+#checkout #product #productx1 {
+  display: grid;
+  grid-template-columns: 20% auto;
+  border: none;
+}
+#checkout #product #productx1 #x1 {
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+@media (min-width: 1024px) {
+  #checkout #product {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+  #checkout #product #overview {
+    padding-top: 200px;
+    margin: 0px 70px;
+  }
+  #checkout #product #overview #x1 {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-#payment h1 {
+#checkout-pay {
+  margin: 0px 16px;
+}
+@media (min-width: 1024px) {
+  #checkout-pay {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#checkout-pay #payment #p1 {
+  grid-area: p1;
+}
+#checkout-pay #payment #p2 {
+  grid-area: p2;
+}
+#checkout-pay #payment #p3 {
+  grid-area: p3;
+}
+#checkout-pay #payment #p4 {
+  grid-area: p4;
+}
+#checkout-pay #payment #p5 {
+  grid-area: p5;
+}
+#checkout-pay #payment #p6 {
+  grid-area: p6;
+}
+#checkout-pay #payment #p7 {
+  grid-area: p7;
+}
+#checkout-pay #payment h1 {
   display: flex;
   justify-content: left;
   font-size: 20px;
 }
-#payment ul {
+#checkout-pay #payment ul {
   display: flex;
   justify-content: left;
 }
-#payment ul li {
+#checkout-pay #payment ul li {
   margin: 0 10px;
 }
-#payment ul li button {
+#checkout-pay #payment ul li button {
   font-size: 0.9375rem;
-  font-size: 10%;
-  padding: 4px 40px;
+  font-size: 30%;
+  padding: 8px 40px;
 }
-#payment #card-number form {
+#checkout-pay #payment #card-number form {
   padding-top: 10px;
   display: flex;
 }
-#payment #card-number form input {
+#checkout-pay #payment #card-number form input {
   width: 100%;
 }
-#payment #card-info form {
+#checkout-pay #payment #card-info form {
   padding-top: 8px;
 }
-#payment #card-info form input {
+#checkout-pay #payment #card-info form input {
   width: 27.4%;
 }
-
-#shipping h1 {
+#checkout-pay #shipping h1 {
   display: flex;
   justify-content: left;
   font-size: 20px;
 }
-#shipping #name form {
-  padding-top: 8px;
-  display: flex;
-}
-#shipping #name form input {
-  width: 100%;
-}
-#shipping #address form {
-  padding-top: 10px;
-  display: flex;
-}
-#shipping #address form input {
-  width: 100%;
-}
-#shipping #address-info form {
-  padding-top: 8px;
-}
-#shipping #address-info form input {
-  width: 27.4%;
-}
-#shipping #delivery img {
+#checkout-pay #delivery img {
   display: flex;
   justify-content: left;
 }
-#shipping #cost {
-  border: 1px solid black;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ".cost.";
-  grid-area: cost;
-  display: grid;
-  grid-template-columns: 50% auto;
+#checkout-pay #cost {
+  margin-top: 20px;
 }
-#shipping #cost div {
-  border: 1px solid black;
-}
-#shipping #cost div a {
-  padding: 10px 20px;
-}
-#shipping #questions {
-  border: 1px solid black;
-}
-#shipping #questions h1 {
-  color: blue;
-}
-#shipping #questions a {
+#checkout-pay #cost h1 {
+  border-bottom: 2px solid black;
   display: flex;
-  justify-self: end;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #checkout-pay #cost {
+    margin-top: -600px;
+  }
+}
+#checkout-pay #cost div a {
+  padding: 10px 20px;
 }
 
 #thankyou-page {
-  margin-top: 100px;
+  margin-top: 120px;
+  padding: 0px 16px;
 }
 @media (min-width: 1024px) {
   #thankyou-page {
@@ -701,6 +766,19 @@ footer #footer-bottom aside ul li {
 #thankyou-page #thankyou {
   margin-top: 100px;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #thankyou-page #thankyou {
+    border: 3px solid black;
+    margin: 30px 25px 30px 50px;
+    padding-top: 120px;
+  }
+  #thankyou-page #thankyou h1 {
+    padding-bottom: 20px;
+  }
+  #thankyou-page #thankyou h3 {
+    padding-bottom: 45px;
+  }
 }
 #thankyou-page #thankyou h1 {
   font-size: 64px;
@@ -716,6 +794,15 @@ footer #footer-bottom aside ul li {
   margin: 20px 50px;
   border: 3px solid black;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #thankyou-page #thankyou #info {
+    border: none;
+    border-top: 3px solid black;
+  }
+  #thankyou-page #thankyou #info h1 {
+    font-size: 32px;
+  }
 }
 #thankyou-page #thankyou #info h2 {
   font-size: 24px;
@@ -735,20 +822,27 @@ footer #footer-bottom aside ul li {
   font-weight: 600;
   padding-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  #thankyou-page #tracking {
+    border: 3px solid black;
+    margin: 30px 50px 30px 25px;
+    padding: 0 30px;
+  }
+}
 #thankyou-page #tracking img {
   width: 100%;
   border: 3px solid var(--orange);
-}
-@media (min-width: 1024px) {
-  #thankyou-page #tracking img {
-    width: 40%;
-  }
 }
 #thankyou-page #tracking div {
   border: 3px solid var(--blue);
   padding: 20px 16px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  #thankyou-page #tracking div {
+    border: none;
+  }
 }
 #thankyou-page #tracking div h1 {
   padding-bottom: 16px;
@@ -760,6 +854,12 @@ footer #footer-bottom aside ul li {
 #thankyou-page #tracking #order-details {
   padding: 20px 16px;
 }
+@media (min-width: 1024px) {
+  #thankyou-page #tracking #order-details {
+    border-top: 3px solid black;
+    padding: 20px 0;
+  }
+}
 #thankyou-page #tracking #order-details h2 {
   font-size: 20px;
   padding-bottom: 6px;
@@ -768,18 +868,35 @@ footer #footer-bottom aside ul li {
   padding-top: 6px;
 }
 
+#shop-more h1 {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #shop-more h1 {
+    font-size: 48px;
+    display: flex;
+    justify-content: left;
+    padding: 40px 65px 20px;
+  }
+}
+
+#bottom {
+  margin: 0px 16px;
+}
+#bottom h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 20px;
+}
 @media (min-width: 1024px) {
   #bottom {
     display: grid;
     grid-template-columns: 50% auto;
+    margin: 0px 65px 100px;
   }
-}
-#bottom h1 {
-  font-size: 100px;
-  display: flex;
-  justify-content: center;
-  font-weight: 600;
-  padding-left: 16px;
 }
 #bottom .thank-img-card {
   background-size: cover;
@@ -789,6 +906,11 @@ footer #footer-bottom aside ul li {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+@media (min-width: 1024px) {
+  #bottom .thank-img-card {
+    margin: 0px 20px;
+  }
 }
 #bottom .thank-img-card button {
   font-size: 20px;

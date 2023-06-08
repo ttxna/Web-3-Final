@@ -1,33 +1,71 @@
 
 #checkout{
-    margin: 20px 16px -10px;
-    padding: 150px 16px 0px 16px;
-   
+    margin: 120px 16px 20px;
+    h1{
+        display: flex;
+    justify-content: center;
+    }
+   div{
+    border: .5px solid black;
+   }
+    #product{
+        border: 8px solid var(--navy);
+        padding: 25px;
+        
+        
+
+    
     img{
         width: 100%;
-        padding: 20px 0px;
-       
+        padding: 40px 0px 60px;
+    
+        
+        @include lg{
+            margin-bottom: -40px;
+        }
     }
-       
+
         h1{
             font-size: 40px;
             padding-bottom: 10px;
-    
         }
         
-        aside{
-            border: 8px solid var(--navy);
-            padding: 25px;
        div{
         margin-top: 9px;
-        margin-bottom: 3px;
+        margin-bottom: 6px;
+        @include lg{
+                margin-bottom: 15px;
+        }
        }
         h2{
             display: flex;
             justify-content: center;
+            
         }
+    #productx1{
+        display: grid;
+        grid-template-columns: 20% auto;
+        border: none;
+        #x1{
+            font-size: 32px;
+            font-weight: 600;
+            padding-top: 5px;
+        }
+    }
+        @include lg {
+            display: grid;
+            grid-template-columns: 50% auto;
+            #overview{
+                padding-top: 200px;
+                margin: 0px 70px;
+            #x1{
+            display: flex;
+            justify-content: center;
+            }
 
         }
     }
+}
+}
     
 

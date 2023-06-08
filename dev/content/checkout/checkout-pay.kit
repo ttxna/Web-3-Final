@@ -1,30 +1,28 @@
-<section>
+<section id="checkout-pay">
     <!-- make sure the inputs are ALL under one form/put box siizing and width 100% under li -->
     <div class="divider"></div> 
+  
+
+    <section id="pay-left">
         <aside id="payment">
             <h1>Payment</h1>
             <ul>
                 <li>
-                    <button> <img src="img/checkout/visa.png" alt="visa button"></button>
+                    <button id="p1"> <img src="img/checkout/visa.png" alt="visa button"></button>
                 </li>
                 <li>
-                    <button> <img src="img/checkout/paypal.png" alt="paypal button"></button>
+                    <button id="p2"> <img src="img/checkout/paypal.png" alt="paypal button"></button>
                 </li>
                 <li>
-                    <button><img src="img/checkout/afterpay.png" alt="afterpay button"></button>
+                    <button id="p3"><img src="img/checkout/afterpay.png" alt="afterpay button"></button>
                 </li>
             </ul>
             <aside id="card-number"> 
                 <form action="#">
-                <input type="card" placeholder="Card Number">
-            </form>
-            </aside>
-
-            <aside id="card-info">
-                <form action="#">
-                    <input id="exp1" type="exp" placeholder="Exp. 01/27">
-                    <input type="cvc" placeholder="CVC">
-                    <input type="zip" placeholder="ZIP">
+                <input id="p4" type="card" placeholder="Card Number">
+                <input id="p5" type="exp" placeholder="Exp. 01/27">
+                <input id="p6" type="cvc" placeholder="CVC">
+                <input id="p7" type="zip" placeholder="ZIP">
                 </form>
             </aside>
             
@@ -39,17 +37,7 @@
                 <form action="#">
                     <input type="name" placeholder="First Name">
                     <input type="name" placeholder="Last Name">
-                </form>
-            </aside>
-            
-            <aside id="address">
-                <form action="#">
                     <input type="address" placeholder="Street Address">
-                </form>
-            </aside>
-
-            <aside id="address-info">
-                <form action="#">
                     <input type="city" placeholder="City">
                     <input type="state" placeholder="State">
                     <input type="zip" placeholder="ZIP">
@@ -85,7 +73,8 @@
         </aside>
 
     <div class="divider"></div>
-
+</section>
+<section id="pay-right">
     <aside id="cost">
         <h1>Cost Summary</h1>
         <div>
@@ -97,10 +86,7 @@
             <a href="#">SUBMIT</a>
         </div>
     </aside>
- 
-    <aside id="questions">
-        <h1>Questions?</h1>
-        <a href="#">Contact Us</a>
-    </aside>
-        
 </section>
+</section>
+
+    

@@ -1,10 +1,12 @@
 #thankyou-page {
     // padding: 32px 16px 0px 16px;
-margin-top: 100px;
+margin-top: 120px;
+padding: 0px 16px;
 
         @include lg {
             display: grid;
             grid-template-columns: 50% auto;
+           
         
     }
 
@@ -12,6 +14,18 @@ margin-top: 100px;
     #thankyou {
         margin-top: 100px;
         text-align: center;
+        @include lg{
+            border: 3px solid black;
+            margin: 30px 25px 30px 50px;
+            padding-top: 120px;
+            h1{
+                padding-bottom: 20px;
+            }
+            h3{
+                padding-bottom: 45px;
+            }
+            
+        }
 
         h1 {
             font-size: 64px;
@@ -25,6 +39,7 @@ margin-top: 100px;
 
 
         }
+        
 
 
         #info {
@@ -32,6 +47,14 @@ margin-top: 100px;
             margin: 20px 50px;
             border: 3px solid black;
             text-align: center;
+            @include lg{
+                border: none;
+                border-top: 3px solid black;
+                h1{
+                    font-size: 32px;
+                }
+                
+            }
 
             h2 {
                 font-size: 24px;
@@ -58,13 +81,19 @@ margin-top: 100px;
     }
 
     #tracking {
+        @include lg{
+            border: 3px solid black;
+            margin: 30px 50px 30px 25px;
+            padding: 0 30px;
+           
+            
+        }
+       
+            
         img {
             width: 100%;
             border: 3px solid var(--orange);
-
-            @include lg {
-                width: 40%;
-            }
+            
         }
 
         div {
@@ -72,7 +101,10 @@ margin-top: 100px;
             padding: 20px 16px;
             margin-top: 30px;
             margin-bottom: 30px;
-
+            @include lg{
+                border: none;
+                
+            }
             h1 {
 
                 padding-bottom: 16px;
@@ -87,6 +119,10 @@ margin-top: 100px;
 
         #order-details {
             padding: 20px 16px;
+            @include lg{
+                border-top: 3px solid black;
+                padding: 20px 0;
+            }
 
             h2 {
 

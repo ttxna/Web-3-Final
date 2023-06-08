@@ -1,4 +1,42 @@
+#checkout-pay{
+    margin: 0px 16px;
+    @include lg {
+        display: grid;
+        grid-template-columns: 50% auto;}
 #payment{
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". payment .";
+
+
+    // grid-template-columns: repeat(1, 1fr);
+    // grid-template-areas: 
+    // "p1 . p2 . p3"
+    // "p4"
+    // "p5 . p6  . p7";
+
+    #p1 {
+            grid-area: p1;
+    }
+    #p2 {
+            grid-area: p2;
+    }
+    #p3 {
+        grid-area: p3;
+    }
+    #p4 {
+        grid-area: p4;
+    }
+    #p5 {
+        grid-area: p5;
+    }
+    #p6 {
+        grid-area: p6;
+    }
+    #p7 {
+        grid-area: p7;
+    }
+   
     h1{
         display: flex;
         justify-content: left;
@@ -10,8 +48,8 @@
         li{
             button{
                 font-size: rem-calc(15);
-                font-size: 10%;
-                padding: 4px 40px;
+                font-size: 30%;
+                padding: 8px 40px;
             }
             margin: 0 10px;
             }
@@ -41,32 +79,9 @@
         justify-content: left;
         font-size: 20px;
     }
-    #name{
-        form{
-            padding-top: 8px;
-            display: flex;
-            input{
-                width: 100%;
-            }
-        }
+  
     }
-    #address{
-        form{
-            padding-top: 10px;
-                display: flex;
-                input{
-                    width: 100%;
-            }
-        }
-}
-#address-info{
-    form{
-        padding-top: 8px;
-        input{
-            width: 27.4%;
-        }
-    }
-}
+
 
 #delivery{
    img{
@@ -76,36 +91,26 @@
             }
 
 #cost{
-    border: 1px solid black;
+    margin-top: 20px;
+    h1{
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: center;
+      
+    }
+    @include lg{
+        margin-top: -600px;
+    }
     div{
-        border: 1px solid black;
+       
         a{
             padding: 10px 20px;
         }
     }
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ".cost.";
-
-    grid-area: cost;
-            display: grid;
-            grid-template-columns: 50% auto;
+    
 
 }
-
-
-#questions{
-    border: 1px solid black;
-h1{
-     color: blue;
-    }
-    a{
-        display: flex;
-        justify-self: end;
-    }
 }
-}
-        
 
 
 
