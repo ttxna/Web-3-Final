@@ -681,89 +681,89 @@ footer #footer-bottom aside ul li {
     grid-template-columns: 50% auto;
   }
 }
-#checkout-pay #payment ul {
+#checkout-pay #pay-left #payment ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin: 10px 0px;
 }
-#checkout-pay #payment ul li {
+#checkout-pay #pay-left #payment ul li {
   width: 100%;
   border: 1px solid black;
   display: flex;
   justify-content: center;
 }
-#checkout-pay #payment ul li button .i3 {
+#checkout-pay #pay-left #payment ul li button .i3 {
   width: 100px;
 }
-#checkout-pay #payment ul li button img {
+#checkout-pay #pay-left #payment ul li button img {
   width: 80px;
 }
-#checkout-pay #payment #card-number form {
+#checkout-pay #pay-left #payment #card-number form {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-areas: "p4 p4 p4 p4 p4 p4 p4 p4 p4 p4" "p5 p5 p5 p5 p5 p6 p6 p7 p7 p7";
   gap: 10px;
 }
-#checkout-pay #payment #card-number form #p4 {
+#checkout-pay #pay-left #payment #card-number form #p4 {
   grid-area: p4;
 }
-#checkout-pay #payment #card-number form #p5 {
+#checkout-pay #pay-left #payment #card-number form #p5 {
   grid-area: p5;
 }
-#checkout-pay #payment #card-number form #p6 {
+#checkout-pay #pay-left #payment #card-number form #p6 {
   grid-area: p6;
 }
-#checkout-pay #payment #card-number form #p7 {
+#checkout-pay #pay-left #payment #card-number form #p7 {
   grid-area: p7;
 }
-#checkout-pay #payment h1 {
+#checkout-pay #pay-left #payment h1 {
   display: flex;
   justify-content: left;
   font-size: 20px;
 }
-#checkout-pay #payment #shipping h1 {
+#checkout-pay #pay-left #payment #shipping h1 {
   display: flex;
   justify-content: left;
-  font-size: 20px;
+  font-size: 50px;
 }
-#checkout-pay #payment #shipping #name form {
+#checkout-pay #pay-left #payment #shipping #name form {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-areas: "n1 n1 n1 n1 n1 n2 n2 n2 n2 n2" "n3 n3 n3 n3 n3 n3 n3 n3 n3 n3" "n4 n4 n4 n4 n4 n5 n5 n6 n6 n6";
   gap: 10px;
 }
-#checkout-pay #payment #shipping #name form #n1 {
+#checkout-pay #pay-left #payment #shipping #name form #n1 {
   grid-area: n1;
 }
-#checkout-pay #payment #shipping #name form #n2 {
+#checkout-pay #pay-left #payment #shipping #name form #n2 {
   grid-area: n2;
 }
-#checkout-pay #payment #shipping #name form #n3 {
+#checkout-pay #pay-left #payment #shipping #name form #n3 {
   grid-area: n3;
 }
-#checkout-pay #payment #shipping #name form #n4 {
+#checkout-pay #pay-left #payment #shipping #name form #n4 {
   grid-area: n4;
 }
-#checkout-pay #payment #shipping #name form #n5 {
+#checkout-pay #pay-left #payment #shipping #name form #n5 {
   grid-area: n5;
 }
-#checkout-pay #payment #shipping #name form #n6 {
+#checkout-pay #pay-left #payment #shipping #name form #n6 {
   grid-area: n6;
 }
-#checkout-pay #payment #delivery img {
+#checkout-pay #pay-left #payment #delivery img {
   display: flex;
   justify-content: left;
 }
-#checkout-pay #payment #cost {
+#checkout-pay #pay-left #payment #cost {
   margin-top: 20px;
 }
-#checkout-pay #payment #cost h1 {
+#checkout-pay #pay-left #payment #cost h1 {
   border-bottom: 2px solid black;
   display: flex;
   justify-content: center;
 }
-#checkout-pay #payment #cost div a {
+#checkout-pay #pay-left #payment #cost div a {
   padding: 10px 20px;
 }
 

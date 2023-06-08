@@ -8,6 +8,7 @@
     @include lg {
         display: grid;
         grid-template-columns: 50% auto;}
+#pay-left{
 #payment{
     ul{
         display: grid;
@@ -75,7 +76,7 @@
     h1{
         display: flex;
         justify-content: left;
-        font-size: 20px;
+        font-size: 50px;
     }
   #name{
 
@@ -136,6 +137,7 @@
     }
     
 
+}
 }
 }
 }
