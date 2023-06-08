@@ -1,77 +1,75 @@
+#div1{
+    
+    
+}
 #checkout-pay{
+   
     margin: 0px 16px;
     @include lg {
         display: grid;
         grid-template-columns: 50% auto;}
 #payment{
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". payment .";
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: 10px 0px;
+        li{
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+                justify-content: center;
+               
+            button{
+               
+                    .i3{
+                        width: 100px;
+                        
+                    }
+                
+                img{
+                    width: 80px;
+            
+                }
+            }
+          
+        }
+    }
+
+    #card-number{
+        
+
+        form{
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-areas: 
+            "p4 p4 p4 p4 p4 p4 p4 p4 p4 p4"
+            "p5 p5 p5 p5 p5 p6 p6 p7 p7 p7";
+            gap: 10px;
 
 
-    // grid-template-columns: repeat(1, 1fr);
-    // grid-template-areas: 
-    // "p1 . p2 . p3"
-    // "p4"
-    // "p5 . p6  . p7";
-
-    #p1 {
-            grid-area: p1;
+            #p4 {
+                grid-area: p4;
+            }
+            #p5 {
+                grid-area: p5;
+            }
+            #p6 {
+                grid-area: p6;
+            }
+            #p7 {
+                grid-area: p7;
+            }
+        }
     }
-    #p2 {
-            grid-area: p2;
-    }
-    #p3 {
-        grid-area: p3;
-    }
-    #p4 {
-        grid-area: p4;
-    }
-    #p5 {
-        grid-area: p5;
-    }
-    #p6 {
-        grid-area: p6;
-    }
-    #p7 {
-        grid-area: p7;
-    }
+    
    
     h1{
         display: flex;
         justify-content: left;
         font-size: 20px;
     }
-    ul{
-        display: flex;
-        justify-content: left;
-        li{
-            button{
-                font-size: rem-calc(15);
-                font-size: 30%;
-                padding: 8px 40px;
-            }
-            margin: 0 10px;
-            }
-    }
-    #card-number{
-    form{
-        padding-top: 10px;
-            display: flex;
-            input{
-                width: 100%;
-        }
-    }
-}
-    #card-info{
-        form{
-            padding-top: 8px;
-            input{
-                width: 27.4%;
-            }
-        }
-    }
-    }
+   
 
 #shipping{
     h1{
@@ -79,7 +77,39 @@
         justify-content: left;
         font-size: 20px;
     }
-  
+  #name{
+
+    form{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-areas: 
+        "n1 n1 n1 n1 n1 n2 n2 n2 n2 n2"
+        "n3 n3 n3 n3 n3 n3 n3 n3 n3 n3"
+        "n4 n4 n4 n4 n4 n5 n5 n6 n6 n6";
+        gap: 10px;
+
+
+        #n1 {
+            grid-area: n1;
+        }
+        #n2 {
+            grid-area: n2;
+        }
+        #n3 {
+            grid-area: n3;
+        }
+        #n4 {
+            grid-area: n4;
+        }
+        #n5 {
+            grid-area: n5;
+        }
+        #n6 {
+            grid-area: n6;
+        }
+       
+    }
+  }
     }
 
 
@@ -98,9 +128,6 @@
         justify-content: center;
       
     }
-    @include lg{
-        margin-top: -600px;
-    }
     div{
        
         a{
@@ -109,6 +136,7 @@
     }
     
 
+}
 }
 }
 
