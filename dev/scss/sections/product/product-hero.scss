@@ -1,29 +1,31 @@
 #product-hero{
-    padding: 0 16px;
-#top{
-padding-top: 100px;
-padding-bottom: 20px;
+    padding: 16px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+   
 
 
 h1{
-    display: grid;
+    display: flex;
     justify-content: left;
     font-size: 36px;
     @include lg{
-        font-size: 48px;
+        font-size: 40px;
     }
 }
 h2{
+    display: flex;
+    justify-content: left;
     font-size: 20px;
     padding-bottom: 10px;
     @include lg{
-        font-size: 36px;
+        font-size: 32px;
         padding-bottom: 30px;
     }
 }
-}
+#top{
 #package{
-   
+    margin-bottom: 40px;
     @include lg{
         display: flex;
         justify-content: center;
@@ -31,37 +33,120 @@ h2{
         grid-template-columns: 50% auto;
         #hero-vacuum{
             img{
-            margin: 0px -100px;
+            @include lg{
+            display: flex;
+            justify-content: left;
+            
             }
         }
     }
     }
+    
 h2{
     font-size: 32px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
 }
 h6{
     font-size: 15px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 6px;
     text-decoration: underline;
     font-weight: 400;
 }
-button{
-    font-size: 20px;
+#option{
+    padding: 30px 40px;
+    border: 3px solid #000;
+    
+    #option-vacuum{
+        display: grid;
+        grid-template-columns: 50% auto;
+        button{
+            border: 1px solid var(--purple);
+            font-size: 12px;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: left;
+            background-color: white;
+            color: black;
+        }
 }
-div{
-    h4{
-        font-size: 20px;
-        font-weight: 400;
+#grid{
+margin: 20px 0px;
+display: flex;
+justify-content: center;
+
+img{
+   height: 20px;
+   margin-top: 35px;
+  
+}
+    #left{
+        padding-right: 50px;
+        padding-top: 20px;
+        p{
+            font-size: 10px;
+        }
+        span{
+            font-size: 32px;
+            font-weight: 600;
+        }
     }
+    #right{
+        padding-left: 50px;
+        padding-top: 20px;
+        p{
+            font-size: 10px;
+        }
+        span{
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+}
+}
+#cart-bton{
+    font-size: 20px;
+    padding: 20px 60px;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: -30px;
+    display: flex;
+    margin-left: 70px;
+    @include lg{
+        padding: 16px 100px;
+    
+}
+}
 }
 }
 
 #details{
+    border: 3px solid var(--teal);
     h1{
         font-size: 15px;
+        background-color: var(--teal);
+        color: white;
+        padding: 10px;
     }
+    #list{
+        div{
+            display: flex;
+            padding: 5px;
+        }
+        padding-bottom: 30px;
+    }
+    #parts{
+        ul{
+            li{
+                img{
+                    display: flex;
+                }
+                
+
+    }
+}
+}
+}
 }
