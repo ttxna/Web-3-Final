@@ -2007,7 +2007,7 @@
     },
     "\/deploy\/img\/product\/gallery1.png" : {
       "ft" : 32768,
-      "iS" : 931489,
+      "iS" : 913491,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/product\/gallery1.png",
       "oF" : 0,
@@ -2020,7 +2020,7 @@
     },
     "\/deploy\/img\/product\/gallery2.png" : {
       "ft" : 32768,
-      "iS" : 500360,
+      "iS" : 490504,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/product\/gallery2.png",
       "oF" : 0,
@@ -2033,7 +2033,7 @@
     },
     "\/deploy\/img\/product\/gallery3.png" : {
       "ft" : 32768,
-      "iS" : 501220,
+      "iS" : 491317,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/product\/gallery3.png",
       "oF" : 0,
@@ -2148,19 +2148,6 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/product\/vacuum-include.png" : {
-      "ft" : 32768,
-      "iS" : 80975,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/product\/vacuum-include.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/deploy\/img\/product\/vacuum.jpg" : {
       "ft" : 16384,
       "iS" : 139908,
@@ -2172,6 +2159,19 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/product\/vacuum2-desktop.png" : {
+      "ft" : 32768,
+      "iS" : 189904,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/product\/vacuum2-desktop.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/deploy\/img\/product\/vacuum2.png" : {

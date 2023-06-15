@@ -1,152 +1,308 @@
-#product-hero{
+#product-hero {
     padding: 16px;
     padding-top: 100px;
     padding-bottom: 20px;
-   
+
+    @include lg {
+        padding: 100px 0px 32px 32px;
+        margin: 50px;
+    }
 
 
-h1{
-    display: flex;
-    justify-content: left;
-    font-size: 36px;
-    @include lg{
-        font-size: 40px;
-    }
-}
-h2{
-    display: flex;
-    justify-content: left;
-    font-size: 20px;
-    padding-bottom: 10px;
-    @include lg{
-        font-size: 32px;
-        padding-bottom: 30px;
-    }
-}
-#top{
-#package{
-    margin-bottom: 40px;
-    @include lg{
+    h1 {
         display: flex;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: 50% auto;
-        #hero-vacuum{
-            img{
+        justify-content: left;
+        font-size: 36px;
+
+        @include lg {
+            font-size: 40px;
+        }
+    }
+
+    h2 {
+        display: flex;
+        justify-content: left;
+        font-size: 20px;
+        padding-bottom: 10px;
+
+        @include lg {
+            font-size: 32px;
+            padding-bottom: 30px;
+        }
+    }
+
+    #top {
+
+        #package {
+
+            margin-bottom: 40px;
+
+            @include lg {
+                display: grid;
+                grid-template-columns: 50% auto;
+
+                #hero-vacuum {
+                    img {
+                        @include lg {
+                            display: flex;
+                            justify-content: left;
+
+                        }
+                    }
+                }
+            }
+        #package2{
             @include lg{
-            display: flex;
-            justify-content: left;
+                margin-top: 25px;
+            }
+
+            h2 {
+                font-size: 32px;
+                padding-top: 20px;
+                justify-content: center;
+
+                @include lg {
+                    margin-top: 20px;
+                    font-size: 42px;
+
+                }
+            }
+
+            h6 {
+                font-size: 15px;
+                text-align: center;
+                margin: 6px;
+                text-decoration: underline;
+                font-weight: 400;
+                margin-top: -10px;
+                margin-bottom: 20px;
+
+                @include lg {
+                    margin-top: -30px;
+                    font-size: 20px;
+
+                }
+
+            }
+
+            #option {
+                padding: 30px 40px;
+                border: 3px solid #000;
+
+                @include lg {
+                    margin: 60px;
+                    margin-top: 20px;
+                    
+                }
+
+                #option-vacuum {
+                    display: grid;
+                    grid-template-columns: 50% auto;
+
+                    button {
+                        border: 1px solid var(--purple);
+                        font-size: 12px;
+                        padding: 16px 20px;
+                        display: flex;
+                        justify-content: left;
+                        background-color: white;
+                        color: black;
+                        @include lg{
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                #grid {
+                    margin: 20px 0px;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        height: 20px;
+                        margin-top: 35px;
+
+                    }
+
+                    #left {
+                        padding-right: 50px;
+                        padding-top: 20px;
+
+                        p {
+                            font-size: 10px;
+                            @include lg{
+                                font-size: 18px;
+                            }
+                        }
+
+                        span {
+                            font-size: 32px;
+                            font-weight: 600;
+                            @include lg{
+                                font-size: 40px;
+                            }
+                        }
+                    }
+
+                    #right {
+                        padding-left: 50px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+
+                        p {
+                            font-size: 10px;
+                            @include lg{
+                                font-size: 18px;
+                            }
+                        }
+
+                        span {
+                            font-size: 32px;
+                            font-weight: 600;
+                            @include lg{
+                                font-size: 40px;
+                            }
+                        }
+                    }
+
+                }
+            }
             
+
+            #cart-bton {
+                font-size: 20px;
+                padding: 20px 60px;
+                background-color: var(--blue);
+                color: var(--white);
+                width: 100%;
+                @include lg{
+                    font-size: 30px;
+                }
             }
         }
     }
     }
-    
-h2{
-    font-size: 32px;
-    text-align: center;
-    padding-top: 20px;
-}
-h6{
-    font-size: 15px;
-    text-align: center;
-    margin: 6px;
-    text-decoration: underline;
-    font-weight: 400;
-}
-#option{
-    padding: 30px 40px;
-    border: 3px solid #000;
-    
-    #option-vacuum{
-        display: grid;
-        grid-template-columns: 50% auto;
-        button{
-            border: 1px solid var(--purple);
-            font-size: 12px;
-            padding: 16px 20px;
-            display: flex;
-            justify-content: left;
-            background-color: white;
-            color: black;
-        }
-}
-#grid{
-margin: 20px 0px;
-display: flex;
-justify-content: center;
 
-img{
-   height: 20px;
-   margin-top: 35px;
-  
-}
-    #left{
-        padding-right: 50px;
-        padding-top: 20px;
-        p{
-            font-size: 10px;
-        }
-        span{
-            font-size: 32px;
-            font-weight: 600;
-        }
-    }
-    #right{
-        padding-left: 50px;
-        padding-top: 20px;
-        p{
-            font-size: 10px;
-        }
-        span{
-            font-size: 32px;
-            font-weight: 600;
-        }
-    }
-
-}
-}
-#cart-bton{
-    font-size: 20px;
-    padding: 20px 60px;
-    background-color: var(--blue);
-    color: var(--white);
-    margin-top: -30px;
-    display: flex;
-    margin-left: 70px;
-    @include lg{
-        padding: 16px 100px;
-    
-}
-}
-}
-}
-
-#details{
-    border: 3px solid var(--teal);
-    h1{
-        font-size: 15px;
-        background-color: var(--teal);
-        color: white;
-        padding: 10px;
-    }
-    #list{
-        div{
-            display: flex;
-            padding: 5px;
-        }
-        padding-bottom: 30px;
-    }
-    #parts{
-        ul{
-            li{
-                img{
-                    display: flex;
+    #bottom {
+      
+        #details {
+            border: 3px solid var(--teal);
+            
+            @include lg{
+                border: 4px solid var(--teal);
+                margin-left: -60px;
+                background-image: url("../img/product/vacuum2-desktop.png");
+                width: 95vh;
+                height: 55vh;
+                background-position: right;
+                background-repeat: no-repeat;
+                background-position: 110%;
+                #d3{
+                    display: none;
+                }
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "d1 d1"
+                "d2 d3";
+                #d1 {
+                    grid-area: d1;
+                }
+                #d2 {
+                    grid-area: d2;
+                }
+                #d3 {
+                    grid-area: d3;
                 }
                 
+            }
+            h1 {
+                font-size: 15px;
+                background-color: var(--teal);
+                color: white;
+                padding: 10px;
+                margin: -1px;
+                @include lg{
+                    font-size: 32px;
+                }
+                
+            }
 
+            #list {
+              
+                div {
+                    display: flex;
+                    padding: 5px;
+                    @include lg{
+                        padding: 10px;
+                        font-size: 30px;
+                    }
+                    
+                }
+
+            }
+            img {
+                margin-bottom: -5px;
+                width: 100%;
+                margin-left: 0px;
+
+                
+            }
+
+        }
+        #partss {
+            @include lg{
+                margin-top: -23px;
+                margin-left: 80px;
+            }
+            ul {
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "v1 v2 v3";
+                gap: 10px;
+                @include lg{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 300px;
+                    margin-bottom: -50px;
+                    
+        
+                   }
+
+                li {
+                   
+                    img{
+                        width: 15vh;
+                        border: 3px solid var(--teal);
+                        background-color: none;
+                        @include lg{
+                            width: 20vh;
+                            border: 4px solid var(--teal);
+
+                           
+                        }
+                    }
+
+                    #v1 {
+                        grid-area: v1;
+                    }
+
+                    #v2 {
+                        grid-area: v2;
+                    }
+
+                    #v3 {
+                        grid-area: v3;
+                    }
+                }
+
+
+            }
+        }
     }
-}
-}
-}
 }

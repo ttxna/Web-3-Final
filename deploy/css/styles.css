@@ -550,6 +550,12 @@ footer #footer-bottom aside ul li {
   padding-top: 100px;
   padding-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  #product-hero {
+    padding: 100px 0px 32px 32px;
+    margin: 50px;
+  }
+}
 #product-hero h1 {
   display: flex;
   justify-content: left;
@@ -577,8 +583,6 @@ footer #footer-bottom aside ul li {
 }
 @media (min-width: 1024px) {
   #product-hero #top #package {
-    display: flex;
-    justify-content: center;
     display: grid;
     grid-template-columns: 50% auto;
   }
@@ -589,27 +593,52 @@ footer #footer-bottom aside ul li {
     justify-content: left;
   }
 }
-#product-hero #top #package h2 {
-  font-size: 32px;
-  text-align: center;
-  padding-top: 20px;
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 {
+    margin-top: 25px;
+  }
 }
-#product-hero #top #package h6 {
+#product-hero #top #package #package2 h2 {
+  font-size: 32px;
+  padding-top: 20px;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 h2 {
+    margin-top: 20px;
+    font-size: 42px;
+  }
+}
+#product-hero #top #package #package2 h6 {
   font-size: 15px;
   text-align: center;
   margin: 6px;
   text-decoration: underline;
   font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
-#product-hero #top #package #option {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 h6 {
+    margin-top: -30px;
+    font-size: 20px;
+  }
+}
+#product-hero #top #package #package2 #option {
   padding: 30px 40px;
   border: 3px solid #000;
 }
-#product-hero #top #package #option #option-vacuum {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 #option {
+    margin: 60px;
+    margin-top: 20px;
+  }
+}
+#product-hero #top #package #package2 #option #option-vacuum {
   display: grid;
   grid-template-columns: 50% auto;
 }
-#product-hero #top #package #option #option-vacuum button {
+#product-hero #top #package #package2 #option #option-vacuum button {
   border: 1px solid var(--purple);
   font-size: 12px;
   padding: 16px 20px;
@@ -618,68 +647,308 @@ footer #footer-bottom aside ul li {
   background-color: white;
   color: black;
 }
-#product-hero #top #package #option #grid {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 #option #option-vacuum button {
+    font-size: 20px;
+  }
+}
+#product-hero #top #package #package2 #option #grid {
   margin: 20px 0px;
   display: flex;
   justify-content: center;
 }
-#product-hero #top #package #option #grid img {
+#product-hero #top #package #package2 #option #grid img {
   height: 20px;
   margin-top: 35px;
 }
-#product-hero #top #package #option #grid #left {
+#product-hero #top #package #package2 #option #grid #left {
   padding-right: 50px;
   padding-top: 20px;
 }
-#product-hero #top #package #option #grid #left p {
+#product-hero #top #package #package2 #option #grid #left p {
   font-size: 10px;
 }
-#product-hero #top #package #option #grid #left span {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 #option #grid #left p {
+    font-size: 18px;
+  }
+}
+#product-hero #top #package #package2 #option #grid #left span {
   font-size: 32px;
   font-weight: 600;
 }
-#product-hero #top #package #option #grid #right {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 #option #grid #left span {
+    font-size: 40px;
+  }
+}
+#product-hero #top #package #package2 #option #grid #right {
   padding-left: 50px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
-#product-hero #top #package #option #grid #right p {
+#product-hero #top #package #package2 #option #grid #right p {
   font-size: 10px;
 }
-#product-hero #top #package #option #grid #right span {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 #option #grid #right p {
+    font-size: 18px;
+  }
+}
+#product-hero #top #package #package2 #option #grid #right span {
   font-size: 32px;
   font-weight: 600;
 }
-#product-hero #top #package #cart-bton {
+@media (min-width: 1024px) {
+  #product-hero #top #package #package2 #option #grid #right span {
+    font-size: 40px;
+  }
+}
+#product-hero #top #package #package2 #cart-bton {
   font-size: 20px;
   padding: 20px 60px;
   background-color: var(--blue);
   color: var(--white);
-  margin-top: -30px;
-  display: flex;
-  margin-left: 70px;
+  width: 100%;
 }
 @media (min-width: 1024px) {
-  #product-hero #top #package #cart-bton {
-    padding: 16px 100px;
+  #product-hero #top #package #package2 #cart-bton {
+    font-size: 30px;
   }
 }
-#product-hero #details {
+#product-hero #bottom #details {
   border: 3px solid var(--teal);
 }
-#product-hero #details h1 {
+@media (min-width: 1024px) {
+  #product-hero #bottom #details {
+    border: 4px solid var(--teal);
+    margin-left: -60px;
+    background-image: url("../img/product/vacuum2-desktop.png");
+    width: 95vh;
+    height: 55vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: 110%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "d1 d1" "d2 d3";
+  }
+  #product-hero #bottom #details #d3 {
+    display: none;
+  }
+  #product-hero #bottom #details #d1 {
+    grid-area: d1;
+  }
+  #product-hero #bottom #details #d2 {
+    grid-area: d2;
+  }
+  #product-hero #bottom #details #d3 {
+    grid-area: d3;
+  }
+}
+#product-hero #bottom #details h1 {
   font-size: 15px;
   background-color: var(--teal);
   color: white;
   padding: 10px;
+  margin: -1px;
 }
-#product-hero #details #list {
-  padding-bottom: 30px;
+@media (min-width: 1024px) {
+  #product-hero #bottom #details h1 {
+    font-size: 32px;
+  }
 }
-#product-hero #details #list div {
+#product-hero #bottom #details #list div {
   display: flex;
   padding: 5px;
 }
-#product-hero #details #parts ul li img {
+@media (min-width: 1024px) {
+  #product-hero #bottom #details #list div {
+    padding: 10px;
+    font-size: 30px;
+  }
+}
+#product-hero #bottom #details img {
+  margin-bottom: -5px;
+  width: 100%;
+  margin-left: 0px;
+}
+@media (min-width: 1024px) {
+  #product-hero #bottom #partss {
+    margin-top: -23px;
+    margin-left: 80px;
+  }
+}
+#product-hero #bottom #partss ul {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "v1 v2 v3";
+  gap: 10px;
+}
+@media (min-width: 1024px) {
+  #product-hero #bottom #partss ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 300px;
+    margin-bottom: -50px;
+  }
+}
+#product-hero #bottom #partss ul li img {
+  width: 15vh;
+  border: 3px solid var(--teal);
+  background-color: none;
+}
+@media (min-width: 1024px) {
+  #product-hero #bottom #partss ul li img {
+    width: 20vh;
+    border: 4px solid var(--teal);
+  }
+}
+#product-hero #bottom #partss ul li #v1 {
+  grid-area: v1;
+}
+#product-hero #bottom #partss ul li #v2 {
+  grid-area: v2;
+}
+#product-hero #bottom #partss ul li #v3 {
+  grid-area: v3;
+}
+
+aside h1 {
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  aside h1 {
+    font-size: 64px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  aside #gallery {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "g1 g2" "g1 g3";
+    padding-bottom: 10px;
+  }
+  aside #gallery #g1 {
+    grid-area: g1;
+    padding-right: 15px;
+  }
+  aside #gallery #g2 {
+    grid-area: g2;
+    height: 32vh;
+  }
+  aside #gallery #g3 {
+    grid-area: g3;
+  }
+}
+
+#v-details {
+  padding: 16px;
+}
+@media (min-width: 1024px) {
+  #v-details {
+    margin: 50px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  #v-details #details {
+    padding-top: 60px;
+    width: fit-content;
+  }
+}
+#v-details #details h4 {
+  font-size: 20px;
+  text-align: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 8px;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  #v-details #details h4 {
+    font-size: 40px;
+    border-top: none;
+  }
+}
+#v-details #details p {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding: 8px;
+}
+@media (min-width: 1024px) {
+  #v-details #details p {
+    font-size: 40px;
+  }
+}
+#v-details #details h5 {
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  padding: 8px;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  #v-details #details h5 {
+    font-size: 40px;
+    border-bottom: none;
+  }
+}
+#v-details img {
+  padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  #v-details {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+
+#hero-breaker img {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 200%;
+}
+@media (min-width: 1024px) {
+  #hero-breaker img {
+    width: 100%;
+  }
+}
+
+#reviews {
+  display: flex;
+  justify-content: space-between;
+}
+#reviews aside {
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+  gap: 10px;
+}
+#reviews aside h1 {
+  font-size: 32px;
+}
+#reviews aside p {
+  font-size: 12px;
+}
+#reviews a {
+  padding: 5px 10px;
+  border: 1px solid var(--purple);
+}
+
+#stars {
   display: flex;
 }
 
