@@ -19,6 +19,7 @@ html {
   --purple:#4E3BC3;
   --blue: #2560B7;
   --teal: #3D6E74;
+  --yellow: #D9CC5A;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -523,13 +524,26 @@ footer {
   text-align: center;
   margin-top: 60px;
 }
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+  }
+}
 footer #socials h1 {
   font-size: 64px;
+}
+@media (min-width: 1024px) {
+  footer #socials h1 {
+    display: flex;
+    justify-content: left;
+  }
 }
 footer #socials ul {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
 }
 footer #socials ul li {
   margin: 0 10px;
@@ -537,12 +551,67 @@ footer #socials ul li {
 footer #socials ul li a {
   font-size: 1.875rem;
   padding-top: 12px;
+  margin-top: -20px;
 }
-footer #footer-bottom aside h1 {
+footer #product h1 {
+  padding-top: 12px;
+  font-size: 24px;
+}
+@media (min-width: 1024px) {
+  footer #product h1 {
+    display: flex;
+    justify-content: left;
+    font-size: 32px;
+  }
+}
+footer #product ul li {
   padding-top: 12px;
 }
-footer #footer-bottom aside ul li {
+@media (min-width: 1024px) {
+  footer #product ul li {
+    display: flex;
+    justify-content: left;
+  }
+}
+footer #support h1 {
   padding-top: 12px;
+  font-size: 24px;
+}
+@media (min-width: 1024px) {
+  footer #support h1 {
+    display: flex;
+    justify-content: left;
+    font-size: 32px;
+  }
+}
+footer #support ul li {
+  padding-top: 12px;
+}
+@media (min-width: 1024px) {
+  footer #support ul li {
+    display: flex;
+    justify-content: left;
+  }
+}
+footer #about h1 {
+  padding-top: 12px;
+  font-size: 24px;
+}
+@media (min-width: 1024px) {
+  footer #about h1 {
+    display: flex;
+    justify-content: left;
+    font-size: 32px;
+  }
+}
+footer #about ul li {
+  padding-top: 12px;
+}
+@media (min-width: 1024px) {
+  footer #about ul li {
+    display: flex;
+    justify-content: left;
+  }
 }
 
 #product-hero {
@@ -919,41 +988,228 @@ aside h1 {
 #hero-breaker img {
   padding-top: 30px;
   padding-bottom: 40px;
-  width: 200%;
-}
-@media (min-width: 1024px) {
-  #hero-breaker img {
-    width: 100%;
-  }
+  width: 100%;
 }
 
-#reviews {
+@media (min-width: 1024px) {
+  #product-bottom {
+    margin: 50px;
+  }
+}
+#product-bottom #reviews {
   display: flex;
   justify-content: space-between;
+  padding: 16px;
 }
-#reviews aside {
+#product-bottom #reviews aside {
+  justify-content: space-between;
   display: flex;
   flex-direction: row;
   align-items: first baseline;
   gap: 10px;
 }
-#reviews aside h1 {
+#product-bottom #reviews aside h1 {
   font-size: 32px;
 }
-#reviews aside p {
+@media (min-width: 1024px) {
+  #product-bottom #reviews aside h1 {
+    font-size: 48px;
+    padding-left: 20px;
+  }
+}
+#product-bottom #reviews aside p {
   font-size: 12px;
+  text-decoration: underline;
 }
-#reviews a {
+#product-bottom #reviews button {
   padding: 5px 10px;
-  border: 1px solid var(--purple);
-}
-
-#stars {
+  margin-bottom: 20px;
+  border: 2px solid var(--purple);
+  background-color: white;
+  color: black;
   display: flex;
+  justify-content: end;
+}
+@media (min-width: 1024px) {
+  #product-bottom #reviews button {
+    margin-bottom: 80px;
+    padding: 10px 40px;
+    margin-right: 20px;
+    font-size: 20px;
+    border: 3px solid var(--purple);
+  }
+}
+#product-bottom #stars {
+  display: flex;
+  padding: 0px 16px;
+  margin-top: -20px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #stars {
+    margin-top: -60px;
+  }
+}
+#product-bottom #stars ul li {
+  color: var(--yellow);
+  font-size: 25px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #stars ul li {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+}
+#product-bottom #stars h3 {
+  padding: 10px 5px;
+  font-size: 20px;
+  margin-top: -8px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #stars h3 {
+    padding: 8px 10px;
+    font-size: 30px;
+  }
+}
+#product-bottom #stars p {
+  padding: 10px 5px;
+  font-size: 12px;
+  align-items: first baseline;
+}
+@media (min-width: 1024px) {
+  #product-bottom #stars p {
+    padding: 8px 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #product-bottom #review-cards {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#product-bottom #review-cards .review-cards {
+  padding: 16px;
+  border: 3px solid var(--purple);
+  margin: 16px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #review-cards .review-cards {
+    border: 4px solid var(--purple);
+    margin: 40px;
+    padding: 20px 16px 40px 16px;
+  }
+}
+#product-bottom #review-cards .review-cards ul li {
+  color: var(--yellow);
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #review-cards .review-cards ul li {
+    font-size: 30px;
+  }
+}
+#product-bottom #review-cards .review-cards h1 {
+  font-size: 24px;
+  text-align: left;
+  padding-top: 10px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #review-cards .review-cards h1 {
+    font-size: 30px;
+  }
+}
+#product-bottom #review-cards .review-cards h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #review-cards .review-cards h3 {
+    font-size: 25px;
+  }
+}
+#product-bottom #review-cards .review-cards p {
+  font-size: 12px;
+  line-height: 15px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #review-cards .review-cards p {
+    font-size: 15px;
+  }
+}
+#product-bottom #shopad h1 {
+  margin-top: 40px;
+  padding: 16px;
+  font-size: 36px;
+}
+@media (min-width: 1024px) {
+  #product-bottom #shopad h1 {
+    text-align: left;
+    font-size: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  #product-bottom #shopad ul {
+    margin-left: -30px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-template-areas: "s1 s2 s3";
+    box-sizing: border-box;
+  }
+}
+#product-bottom #shopad ul li .shop-ad {
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 4px solid var(--purple);
+  margin: 25px;
+  margin-bottom: 80px;
+}
+#product-bottom #shopad ul li .shop-ad button {
+  font-size: 20px;
+  background-color: var(--purple);
+  padding: 16px 70px;
+  margin-bottom: -30px;
+  color: var(--white);
+}
+#product-bottom #shopad ul li #vertex {
+  background-image: url("../img/product/shop1.png");
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  #product-bottom #shopad ul li #vertex {
+    width: 40vh;
+  }
+}
+#product-bottom #shopad ul li #rotator {
+  background-image: url("../img/product/shop2.png");
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  #product-bottom #shopad ul li #rotator {
+    width: 40vh;
+  }
+}
+#product-bottom #shopad ul li #navigator {
+  background-image: url("../img/product/shop3.png");
+  background-size: contain;
+}
+@media (min-width: 1024px) {
+  #product-bottom #shopad ul li #navigator {
+    width: 40vh;
+  }
 }
 
 #checkout {
   margin: 120px 16px 20px;
+}
+@media (min-width: 1024px) {
+  #checkout {
+    padding: 50px;
+  }
 }
 #checkout h1 {
   display: flex;
@@ -1029,6 +1285,7 @@ aside h1 {
     gap: 50px;
     border-bottom: 3px solid black;
     padding-bottom: 20px;
+    padding: 50px;
   }
 }
 #checkout-pay #pay-left #payment ul {
@@ -1203,13 +1460,14 @@ aside h1 {
   margin-bottom: 16px;
   padding-bottom: 16px;
 }
-#checkout-pay #cost #cost2 a {
+#checkout-pay #cost #cost2 button {
   display: flex;
   justify-content: center;
   background-color: var(--blue);
   color: white;
   font-size: 20px;
   padding: 15px;
+  width: 100%;
 }
 
 #thankyou-page {

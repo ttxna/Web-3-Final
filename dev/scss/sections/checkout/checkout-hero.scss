@@ -1,6 +1,10 @@
 
 #checkout{
     margin: 120px 16px 20px;
+    @include lg{
+        padding: 50px;
+    }
+  
   
     h1{
         display: flex;

@@ -5,42 +5,110 @@ footer{
     padding: 0 16px 24px;
     text-align: center;
     margin-top: 60px;
-    
+    @include lg{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    }
     #socials{
 
         h1{
             font-size: 64px;
+            @include lg{
+                display: flex;
+                justify-content: left;
+            }
+            
         }
-
         ul{
         display: flex;
         justify-content: center;
-        margin-top: 16px;
+
         li{
+            
+           
             a{
                 font-size: rem-calc(30);
                 padding-top: 12px;
+                margin-top: -20px;
+                
+
 
             }
         margin: 0 10px;
             }
         }
     }
-    #footer-bottom{
-        
-        aside{
+    #product{
             h1{
                 padding-top: 12px;
+                font-size: 24px;
+                
+                @include lg{
+                    display: flex;
+                    justify-content: left;
+                    font-size: 32px;
+                }
                
             }
+           
             ul{
                 li{
                     padding-top: 12px;
+                    @include lg{
+                        display: flex;
+                        justify-content: left;
+                    }
                     
+                }
+            }
+        }
+    #support{
+            h1{
+                padding-top: 12px;
+                font-size: 24px;
+               
+                @include lg{
+                    display: flex;
+                    justify-content: left;
+                    font-size: 32px;
+                }
+               
+            }
+           
+            ul{
+                li{
+                    padding-top: 12px;
+                    @include lg{
+                        display: flex;
+                        justify-content: left;
+                    }
+                }
+            }
+        }
+    #about{
+            h1{
+                padding-top: 12px;
+                font-size: 24px;
+                
+                @include lg{
+                    display: flex;
+                    justify-content: left;
+                    font-size: 32px;
+                }
+            }
+           
+            ul{
+                li{
+                    padding-top: 12px;
+                    @include lg{
+                        display: flex;
+                        justify-content: left;
+                    }
                 }
             }
         }
     }
     
     
-}
